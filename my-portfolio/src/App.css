@@ -1,0 +1,104 @@
+/* 
+
+DESKTOP / LAPTOP VERSION 
+
+*/
+
+.banner {
+  width: 100%;
+  height: 600px;
+}
+
+.link {
+  background-color: none;
+}
+
+.profilePic {
+  width:200px;
+  height: auto;
+  border-radius: 50px;
+}
+
+.landscapePic {
+ width: 95%;
+ height: auto;
+ margin-left: 2%;
+ margin-top: 10px;
+ align-items: center;
+ border-radius: 10px;
+ transition: transform .2s;
+ border: black solid 2px;
+}
+
+.landscapePic:hover {
+  transform: scale(1.1);
+}
+
+span {
+  background-color: black;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.weatherPic {
+  width: 200px;
+  height: auto;
+  align-content: center;
+  margin-top: 10px;
+  margin-left: 32.5%;
+  border-radius: 10px;
+  transition: transform .2s;
+  border: black solid 2px;
+}
+
+.weatherPic:hover {
+  transform: scale(1.1);
+}
+
+.socialIcon {
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+.github {
+  border-radius: 50px;
+  border: 2px black solid;
+  margin-left: 20px;
+}
+
+/* 
+
+TABLET VERSION 
+
+*/
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+
+
+
+/* 
+
+MOBILE VERSION 
+
+*/
+
