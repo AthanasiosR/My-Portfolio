@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Chalkboard from "./Pics/Chalkboard.jpg";
 import ProfilePic from "./Pics/ProfilePic.jpeg";
+import FadeIn from "react-fade-in";
+import Fade from 'react-reveal/Fade';
 
 function Intro () {
     return (
@@ -15,27 +17,31 @@ function Intro () {
                 Full-Stack Web Developer
             </Para>
         </Title>
-        <AboutMe>
-            <ImageMe>
-                <img class="profilePic" src={ProfilePic} />
-            </ImageMe>
-            <Info>
-                <AboutMeTitle id="aboutMe">
-                    About Me
-                </AboutMeTitle>
-                <AboutMeParagraph>
-                    I graduated from Concordia in December 2019 with a major in Urban Studies. 
-                    While completing my major I became very interested in web development through 
-                    online tutorials and classes. Once I graduated, I decided to pursue my interest 
-                    in web development as a full time career by enrolling in Concordias Full-stack Web Development bootcamp. 
-                    I’m a focused and goal oriented person 
-                    that can work individually or in a team environment. I’m a very hardworking and able 
-                    to organize and prioritize my work so I never miss a deadline. With the knowledge from 
-                    the bootcamp, I can build and create full-stack websites and web applications and pursue my passion as a career. 
-                </AboutMeParagraph>
-            </Info>
-        
-        </AboutMe>
+
+
+        <Fade bottom>
+            <AboutMe>
+                <ImageMe>
+                    <img class="profilePic" src={ProfilePic} />
+                </ImageMe>
+                <Info>
+                    <AboutMeTitle id="aboutMe">
+                        About Me
+                    </AboutMeTitle>
+                    <AboutMeParagraph>
+                        I graduated from Concordia in December 2019 with a major in Urban Studies. 
+                        While completing my major I became very interested in web development through 
+                        online tutorials and classes. Once I graduated, I decided to pursue my interest 
+                        in web development as a full time career by enrolling in Concordias Full-stack Web Development bootcamp. 
+                        I’m a focused and goal oriented person 
+                        that can work individually or in a team environment. I’m a very hardworking and able 
+                        to organize and prioritize my work so I never miss a deadline. With the knowledge from 
+                        the bootcamp, I can build and create full-stack websites and web applications and pursue my passion as a career. 
+                    </AboutMeParagraph>
+                </Info>
+            </AboutMe>
+        </Fade>
+
         <Skills>
             <SkillsTitle>
                 My Skills
@@ -50,8 +56,28 @@ function Intro () {
                 <li>Node</li>
                 <li>Express</li>
                 <li>MongoDB</li>
+                <li>PHP</li>
             </MySkills>
         </Skills>
+
+        <Experience>
+            Experience : 
+            <ExperienceTitle>
+                Freelance Web Developer
+            </ExperienceTitle>
+            <ExperienceTitleTwo>
+                Progressive Web solutions June 2021 - Present
+            </ExperienceTitleTwo>
+            <ExperienceInfo>
+                <li>Full-Stack development for program applications</li>
+                <li>Creating new features</li>
+                <li>Performing bug fixes</li>
+            </ExperienceInfo>
+
+
+
+
+        </Experience>
         </>     
     );
 };
@@ -126,6 +152,28 @@ margin-left: 50px;
 const MySkills = styled.ul`
 column-count: 3;
 margin-left: 30px;
+line-height: 1.6;
+`;
+
+const Experience = styled.div`
+font-size: 30px;
+margin-left: 50px;
+`;
+
+const ExperienceTitle = styled.div`
+font-size: 20px;
+margin-top: 10px;
+font-weight: bold;
+`;
+
+const ExperienceTitleTwo = styled.div`
+font-size: 15px;
+font-weight: bold;
+`;
+
+
+const ExperienceInfo = styled.ul`
+font-size: 18px;
 line-height: 1.6;
 `;
 

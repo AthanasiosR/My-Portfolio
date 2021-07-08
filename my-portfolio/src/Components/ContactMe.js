@@ -12,7 +12,7 @@ function ContactMe () {
             Email me at: tommy_rigas@outlook.com
         </Text>
         <Icons>
-            <SocialIcon className="socialIcon" url="https://www.linkedin.com/in/athanasios-tommy-rigas/" />
+            <SocialIcon className="socialIcon" url="https://www.linkedin.com/in/tommy-rigas/" />
             <SocialIcon className="github" url="https://github.com/AthanasiosR" bgColor="white" />
             <SocialIcon className="socialIcon" url="mailto:tommy_rigas@outlook.com" network="email" />
         </Icons>
